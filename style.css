@@ -1,8 +1,37 @@
 body {
-	background-color: #1a1a1a;;
-	/*background-color: black;*/
+	/*background-color: #1a1a1a;;*/
+	background-color: black;
 	color: #FDFDFD;
 	font-family: 'Indie Flower', cursive;
+}
+
+svg {
+    width: 197px;
+    height: 300px;
+    fill: #FDFDFD;
+}
+
+.floating {
+    -webkit-animation-name: floatingWebkit;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes floatingWebkit {
+    from {-webkit-transform:translate(0, 0px);}
+    50% {-webkit-transform:translate(0, 4px);}
+    to {-webkit-transform: translate(0, 0px);}    
+}
+    
+@keyframes floating {
+    from {transform:translate(0, 0px);}
+    50% {transform:translate(0, 4px);}
+    to {transform: translate(0, 0px);}    
 }
 
 #logo {
