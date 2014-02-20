@@ -1,0 +1,22 @@
+body {
+	background-color: #1a1a1a;;
+	/*background-color: black;*/
+	color: #FDFDFD;
+	font-family: 'Indie Flower', cursive;
+}
+
+#logo {
+	position: absolute;
+	top:0;
+	bottom: 100px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 197px;
+    height: 300px;
+    text-align: center;
+}
+
+span {
+	font-size: 30px;
+}
