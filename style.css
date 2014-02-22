@@ -260,7 +260,7 @@ a:hover {
 @media only screen and (max-width: 768px) {
     #actionitems {
         text-align: center;
-
+        margin-left: -10px;
     }
     #levi-caption {
         margin-left: 0px;
