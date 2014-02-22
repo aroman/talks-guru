@@ -1,0 +1,132 @@
+body {
+	background-color: black;
+	color: #FDFDFD;
+    background-image:url('dark_mosaic.png');
+}
+
+html, body, button, input, select, textarea,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.button-xsmall {
+   font-size: 70%;
+}
+
+.button-small {
+   font-size: 85%;
+}
+
+.button-large {
+   font-size: 110%;
+}
+
+.button-xlarge {
+   font-size: 150%;
+}
+
+#header {
+    background-color: black;
+    height: 50px;
+    color: white;
+    border-bottom: solid 3px #3771c8;
+    padding: 20px 0px 5px 5px;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px #3771c8;
+    -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px #3771c8;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px #3771c8;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#header-title {
+    color: white;
+    font-size: 30px;
+}
+
+#footer {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: black;
+    height: 30px;
+    color: white;
+    border-top: solid 3px orange;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px orange;
+    -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px orange;
+    text-align: center;
+    font-family: Inconsolata;
+}
+
+#quote {
+    float: left;
+    font-family: 'IM Fell English', serif;
+    font-size: 22px;
+}
+
+#quote > em {
+    font-family: 'Indie Flower', cursive;
+}
+
+
+a.heart {
+    color: #ff591f;
+    /*text-shadow: 0 0 15px red;*/
+}
+
+a.heart:hover {
+    color: #009999;
+    text-decoration: none;
+}
+
+#lovebox {
+    float: right;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    #quote {
+        display: none;
+    }
+    #lovebox {
+        float: none;
+        text-align: center;
+    }
+
+}

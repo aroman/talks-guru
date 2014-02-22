@@ -1,0 +1,137 @@
+
+svg {
+    width: 295px;
+    height: 450px;
+    fill: #FDFDFD;
+    padding: 10px;
+}
+
+.floating {
+    -webkit-animation-name: floatingWebkit;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes floatingWebkit {
+    from {-webkit-transform:translate(0, 0px);}
+    50% {-webkit-transform:translate(0, 4px);}
+    to {-webkit-transform: translate(0, 0px);}    
+}
+    
+@keyframes floating {
+    from {transform:translate(0, 0px);}
+    50% {transform:translate(0, 4px);}
+    to {transform: translate(0, 0px);}    
+}
+
+#cta {
+    text-align: center;
+}
+
+#blerb {
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+h2, h3 {
+    font-weight: normal;
+    display: inline;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 40px;
+}
+
+h2 > strong {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.signal {
+    color: #39E444;
+}
+
+.noise {
+    color: #FF4540;
+}
+
+.diamonds {
+    color: #34C6CD
+}
+
+.free {
+    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 3px solid white;
+}
+
+.curated {
+    /*font-style: italic;*/
+    color: #FF9840;
+}
+
+@media only screen and (min-width: 768px) {
+    #blerb {
+        margin-right: 65px;
+    }
+    svg {
+        margin-left: -65px;
+    }
+}
+
+#levi-caption {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 24px;
+    margin-left: -65px;
+}
+
+.q, .a {
+    display: block;
+    font-size: 22px;
+    width: 90%;
+}
+
+.q::before {
+    content: "Q:";
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 26px;
+    font-style: normal;
+}
+
+.a::before {
+    content: "A:";
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 26px;
+}
+
+.q {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.a {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    #actionitems {
+        text-align: center;
+        margin-left: -10px;
+    }
+    #levi-caption {
+        margin-left: 0px;
+    }
+}
