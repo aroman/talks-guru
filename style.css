@@ -1,14 +1,62 @@
 body {
-	/*background-color: #1a1a1a;;*/
 	background-color: black;
 	color: #FDFDFD;
-	font-family: 'Indie Flower', cursive;
+    background-image:url('dark_mosaic.png');
 }
 
+html, body, button, input, select, textarea,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.button-xsmall {
+   font-size: 70%;
+}
+
+.button-small {
+   font-size: 85%;
+}
+
+.button-large {
+   font-size: 110%;
+}
+
+.button-xlarge {
+   font-size: 125%;
+}
+
+
 svg {
-    width: 197px;
-    height: 300px;
+    width: 295px;
+    height: 450px;
     fill: #FDFDFD;
+    padding: 10px;
 }
 
 .floating {
@@ -34,18 +82,185 @@ svg {
     to {transform: translate(0, 0px);}    
 }
 
-#logo {
-	position: absolute;
-	top:0;
-	bottom: 100px;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 197px;
-    height: 300px;
+#cta {
     text-align: center;
 }
 
-span {
-	font-size: 30px;
+#blerb {
+    text-align: left;
+    margin-left: 50px;
+}
+
+h2, h3 {
+    font-weight: normal;
+    display: inline;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 40px;
+}
+
+h2 > strong {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.signal {
+    color: #39E444;
+}
+
+.noise {
+    color: #FF4540;
+}
+
+.diamonds {
+    color: #34C6CD
+}
+
+.free {
+    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 3px solid white;
+}
+
+.curated {
+    /*font-style: italic;*/
+    color: #FF9840;
+}
+
+#levi {
+}
+
+#actionitems > * {
+    text-align: center;
+    margin-right: 15px;
+}
+
+.q, .a {
+    display: block;
+    font-size: 22px;
+}
+
+.q::before {
+    content: "Q:";
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 26px;
+    font-style: normal;
+}
+
+.a::before {
+    content: "A:";
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 26px;
+}
+
+.q {
+    font-style: italic;
+}
+
+.a {
+    font-size: 20px;
+}
+/*
+#quote {
+    margin-left: 25px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#quote-body {
+    font-size: 30px;
+    font-family: 'IM Fell English', serif;
+}
+
+#quote-author {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    margin-top: 10px;
+}
+*/
+#header {
+    background-color: black;
+    height: 50px;
+    color: white;
+    border-bottom: solid 3px #3771c8;
+    padding: 20px 0px 5px 5px;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px #3771c8;
+    -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px #3771c8;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px #3771c8;
+    margin-bottom: 50px;
+    /*background-image:url('stardust.png');*/
+    text-align: center;
+}
+
+#header-title {
+    color: white;
+    font-size: 30px;
+}
+
+#quote {
+    float: left;
+    font-family: 'IM Fell English', serif;
+    font-size: 22px;
+}
+
+#quote > em {
+    font-family: 'Indie Flower', cursive;
+}
+
+#footer {
+    margin-top: 150px;
+    padding: 30px;
+    background-color: black;
+    height: 20px;
+    color: white;
+    border-top: solid 3px orange;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px orange;
+    -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px orange;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 20px orange;
+/*    -webkit-box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.3);*/
+    /*background-image:url('stardust.png');*/
+    text-align: center;
+    font-family: Inconsolata;
+    /*font-family: Open Sans;*/
+}
+
+a.heart {
+    /*content: "\e804";*/
+    color: #ff591f;
+    text-shadow: 0 0 15px red;
+}
+
+a.heart:hover {
+    color: #009999;
+    text-decoration: none;
+}
+
+#diamond-icon {
+    height: 50px;
+    margin-top: -10px;
+    margin-right: -114px;
+    display: none;
+}
+
+#lovebox {
+    float: right;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
 }
