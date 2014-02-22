@@ -18,6 +18,8 @@ html, body, button, input, select, textarea,
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .button-success {
@@ -51,7 +53,6 @@ html, body, button, input, select, textarea,
 .button-xlarge {
    font-size: 150%;
 }
-
 
 svg {
     width: 295px;
@@ -260,9 +261,6 @@ a:hover {
     #actionitems {
         text-align: center;
 
-    }
-    #actionitems:first-child {
-        margin: 15px;
     }
     #levi-caption {
         margin-left: 0px;
