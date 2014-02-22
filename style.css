@@ -153,6 +153,7 @@ h3 {
 .q, .a {
     display: block;
     font-size: 22px;
+    width: 90%;
 }
 
 .q::before {
@@ -177,7 +178,6 @@ h3 {
 
 .a {
     font-size: 20px;
-    width: 80%;
     margin-bottom: 25px;
 }
 
