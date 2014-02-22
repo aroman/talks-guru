@@ -5,7 +5,15 @@ title: Archive
 ---
 <section id="archive-container">
     {% for post in site.posts %}
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <span>{{ post.date | date_to_string }}</span>
+		<section id="talk">
+			<header>
+		        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+		        <span class="speaker">{{ post.speaker }}</span> <span class="date-sep"> on</span>
+		        <span class="speaker">{{ post.date | date_to_long_string }}</span>
+		        <span class="tags">{{ post.tags | array_to_sentence_string }}</span>
+	        </header>
+	        <br>
+        {{ post.content }}
+	    </section>
     {% endfor %}
 </section>

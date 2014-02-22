@@ -1,0 +1,48 @@
+body {
+	/*color: black;*/
+	/*background-image: none;*/
+	/*background-color: white;*/
+}
+
+#archive-container {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#talk {
+	text-align: center;
+	margin-bottom: 75px;
+}
+
+header {
+	/*text-align: left;*/
+}
+
+.title, .tags {
+	display: block;
+}
+
+.title {
+	font-size: 28px;
+	color: #FF9840;;
+}
+
+.speaker {
+	font-size: 24px;
+	margin: 0px;
+	color: #34C6CD;
+}
+
+.date-sep {
+	font-size: 24px;
+}
+
+.date {
+	font-size: 16px;
+	margin-bottom: 0px;
+	color: #6A89D5;
+}
+
+.tags {
+	color: #5AC161;
+}
