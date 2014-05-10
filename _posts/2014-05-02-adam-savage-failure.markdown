@@ -1,8 +1,8 @@
 ---
 layout: base
-title:  DEFCON 17: Failure
+title: DEFCON 17\: Failure
 speaker: Adam Savage
-date:   2009-08-11
+date: 2009-08-11
 ---
 
 <div id="talk-container">
